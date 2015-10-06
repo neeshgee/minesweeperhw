@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Sigmar+One);
+
 body {
   background-color: lightblue;
 
@@ -12,6 +14,7 @@ body {
 }
 
 h1 {
+  font-family: 'Sigmar One', sans-serif;
   color: black;
   text-align: center;
 }
@@ -43,15 +46,28 @@ a {
    color: black;
  }
 
- table .game {
-   margin: 2em auto;
+  .game {
+   margin-left: 150px;
+   text-align: center;
+
  }
 
  .instructions {
+   margin-left: 100px;
    text-align: center;
    color: black;
  }
 
  .mines {
+   margin-left: 100px;
    text-align: center;
+ }
+
+ .new {
+   margin-left: 150px;
+   text-align: center;
+ }
+
+ button {
+   padding: 10px;
  }

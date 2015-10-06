@@ -2,7 +2,6 @@ _.templateSettings = {
   interpolate : /\{\{(.+?)\}\}/g
 };
 
-
 const API_ROOT = 'https://minesweeper-api.herokuapp.com/';
 
 var Game = Backbone.Model.extend({
@@ -63,7 +62,7 @@ var GameView = Backbone.View.extend({
     template: _.template($('#gameTemplate').html()),
 
     events: {
-      'click td.unrevealed': 'checkCell',
+      'click td.uncovered': 'checkCell',
       'contextmenu td': 'flagCell'
 
     },
@@ -123,13 +122,10 @@ var GameView = Backbone.View.extend({
     initialize: function () {
       this.listenTo(this.model, 'change', this.render);
       this.model.fetch();
-    },
-
-
-    function () {
-      var router = new Router();
-      console.log('hey');
     }
-
-
   });
+
+$(function () {
+  var router = new Router();
+  console.log('hey');
+})
