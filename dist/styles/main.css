@@ -1,0 +1,57 @@
+body {
+  background-color: lightblue;
+
+}
+
+.container {
+  display: flex;
+  width: 500px;
+  margin: auto;
+  text-align: center;
+  /*border: 6px solid black;*/
+}
+
+h1 {
+  color: black;
+  text-align: center;
+}
+
+td {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  border: 1px solid black;
+}
+
+.uncovered {
+  background-color: grey;
+}
+
+.flagged {
+  background-color: #000099;
+}
+
+.mine {
+  background-color: #FF0000;
+}
+
+a {
+  text-decoration: none;
+}
+ a:visited {
+   color: black;
+ }
+
+ table .game {
+   margin: 2em auto;
+ }
+
+ .instructions {
+   text-align: center;
+   color: black;
+ }
+
+ .mines {
+   text-align: center;
+ }
